@@ -258,7 +258,15 @@ article:hover {
 	transition: color 0.3s ease;
 }
 
+.success-text {
+	font-family: 'Poppins', sans-serif;
+	text-align: center;
+	font-size: 25px;
+}
 
+.fa-smile-beam {
+	color: #695E5E;
+}
 
 /*---Footer---*/
 
