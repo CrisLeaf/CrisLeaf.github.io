@@ -167,6 +167,33 @@ article:hover {
 	}
 }
 
+@media (prefers-color-scheme: dark) {
+	.container {
+    	max-width: 600px;
+    	height: auto;
+    	background: #ffffff;
+    	margin: 20px auto;
+    	padding: 5px 0px;
+    }
+	.article-container {
+	    max-width: 600px;
+	    background: #ffffff;
+	    height: auto;
+	    margin: auto;
+	    padding: 10px 10px 10px 10px;
+	    border-radius: 6px;
+	    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+	}
+	.contact-container {
+    	max-width: 600px;
+    	background: #ffffff;
+    	margin: auto;
+    	border-radius: 6px;
+    	padding: 20px 60px 30px 40px;
+    	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    }
+}
+
 
 /*---Page buttons---*/
 
@@ -179,7 +206,7 @@ article:hover {
 .btn {
 	border: none;
 	outline: none;
-	background: #fff;
+	background: #ffffff;
 	padding: 10px 30px;
 	width: 60%
 	font-size: 20px;
@@ -206,7 +233,7 @@ article:hover {
 
 .contact-container {
 	max-width: 600px;
-	background: #fff;
+	background: #ffffff;
 	margin: auto;
 	border-radius: 6px;
 	padding: 20px 60px 30px 40px;
@@ -245,7 +272,6 @@ article:hover {
 	padding-bottom: 6px;
 }
 
-
 .send-btn {
 	border: none;
 	font-size: 30px;
@@ -276,7 +302,7 @@ article:hover {
 
 .article-container {
     max-width: 600px;
-    background: #fff;
+    background: #ffffff;
     height: auto;
     margin: auto;
     padding: 10px 10px 10px 10px;
