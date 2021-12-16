@@ -32,13 +32,16 @@ a {
 /*Card styling*/
 
 .container {
-	max-width: 600px;
-	height: auto;
-	margin: 20px auto;
-	padding: 5px 0px;
+    max-width: 600px;
+    height: auto;
+    background: #ffffff;
+    margin: 20px auto;
+    padding: 5px 10px;
 }
-
-
+.article-link {
+	color: #222222;
+	text-decoration: none;
+}
 
 .card-title {
 	font-family: 'DM Sans', sans-sherif;
@@ -81,6 +84,10 @@ article:hover {
 	flex-direction: row;
 	justify-content: space-between;
 	padding: 10px;
+}
+
+.navbar-nav {
+	padding: 0;
 }
 
 .nav-brand {
@@ -158,40 +165,7 @@ article:hover {
 	margin-bottom: 3em;
 }
 
-/*Media Query*/
 
-@media (max-width: 800px) {
-	.navbar {
-		flex-direction: column;
-	}
-}
-
-@media (prefers-color-scheme: dark) {
-	.container {
-    	max-width: 600px;
-    	height: auto;
-    	background: #ffffff;
-    	margin: 20px auto;
-    	padding: 5px 0px;
-    }
-	.article-container {
-	    max-width: 600px;
-	    background: #ffffff;
-	    height: auto;
-	    margin: auto;
-	    padding: 10px 10px 10px 10px;
-	    border-radius: 6px;
-	    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-	}
-	.contact-container {
-    	max-width: 600px;
-    	background: #ffffff;
-    	margin: auto;
-    	border-radius: 6px;
-    	padding: 20px 60px 30px 40px;
-    	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-    }
-}
 
 
 /*---Page buttons---*/
@@ -231,12 +205,12 @@ article:hover {
 }
 
 .contact-container {
-	max-width: 600px;
-	background: #ffffff;
-	margin: auto;
-	border-radius: 6px;
-	padding: 20px 60px 30px 40px;
-	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    max-width: 600px;
+    background: #ffffff;
+    margin: auto;
+    border-radius: 6px;
+    padding: 20px 60px 30px 40px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 #topic-message {
@@ -325,13 +299,52 @@ article:hover {
 
 .card-image {
 	max-width: 100%;
-	height: auto;
+	height: 300;
 }
 
 .article-date {
 	text-align: right;
 	margin: 10px;
 	color: #666666;
+}
+
+/*Media Query*/
+
+@media (max-width: 800px) {
+	.navbar {
+		flex-direction: column;
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	.container {
+    	max-width: 600px;
+    	height: auto;
+    	background: #ffffff;
+    	margin: 20px auto;
+    	padding: 5px 10px;
+    }
+	.article-container {
+	    max-width: 600px;
+	    background: #ffffff;
+	    height: auto;
+	    margin: auto;
+	    padding: 10px 10px 10px 10px;
+	    border-radius: 6px;
+	    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+	}
+	.contact-container {
+    	max-width: 600px;
+    	background: #ffffff;
+    	margin: auto;
+    	border-radius: 6px;
+    	padding: 20px 60px 30px 40px;
+    	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    }
+    .article-link {
+    	color: #222222;
+    	text-decoration: none;
+    }
 }
 
 /*---Footer---*/
