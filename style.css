@@ -32,39 +32,32 @@ a {
 /*Card styling*/
 
 .container {
-	max-width: 800px;
-	height: 266px;
+	max-width: 600px;
+	height: auto;
 	margin: 20px auto;
-	padding: 8px;
+	padding: 5px 0px;
 }
 
 .card-image {
-	float: left;
-	vertical-align: sub;
 }
 
 .card-title {
 	font-family: 'DM Sans', sans-sherif;
 	font-weight: bold;
 	text-align: center;
-	margin: 10px 10px 10px 410px;
+	margin: 10px;
 }
 
 .card-subtitle {
 	font-family: 'Poppins', sans-serif;
-	text-align: left;
-	margin: 10px 10px 10px 460px;
-	padding: 5px
+	margin: 10px;
 }
 
 .card-footer {
-	margin: 25px;
 	text-align: right;
+	margin: 10px;
 	color: #666;
 }
-
-
-
 
 article {
 	background-color: #ffffff;
@@ -75,9 +68,9 @@ article {
 }
 
 article:hover {
-	box-shadow: 0 0.1rem 0.4rem rgba(0,0,0,0.3);
-	transition: all 0.3s ease;
-	-webkit-transition: all 0.3s ease;
+	box-shadow: 0 0.1rem 0.4rem rgba(0,0,0,0.5);
+	transition: all 0.4s ease;
+	-webkit-transition: all 0.4s ease;
 }
 
 
@@ -203,7 +196,7 @@ article:hover {
 }
 
 .contact-container {
-	max-width: 800px;
+	max-width: 600px;
 	background: #fff;
 	margin: auto;
 	border-radius: 6px;
@@ -240,6 +233,7 @@ article:hover {
 
 .input-box textarea {
 	padding-top: 6px;
+	padding-bottom: 6px;
 }
 
 
@@ -265,7 +259,8 @@ article:hover {
 }
 
 .fa-smile-beam {
-	color: #695E5E;
+	font-size: 60px;
+	color: #666;
 }
 
 /*---Footer---*/
