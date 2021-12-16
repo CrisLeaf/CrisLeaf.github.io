@@ -56,7 +56,7 @@ a {
 .card-footer {
 	text-align: right;
 	margin: 10px;
-	color: #666;
+	color: #666666;
 }
 
 article {
@@ -130,11 +130,20 @@ article:hover {
 
 /*---/Navigation Menu---*/
 
-/*--- ---*/
 
 #site-main {
 	margin-top: 120px;
 	margin-bottom: 50px
+}
+
+#contact-main {
+	margin-top: 120px;
+	margin-bottom: 120px
+}
+
+#article-main {
+	margin-top: 120px;
+	margin-bottom: 120px
 }
 
 #post {
@@ -174,7 +183,7 @@ article:hover {
 	padding: 10px 30px;
 	width: 60%
 	font-size: 20px;
-	color: #222;
+	color: #222222;
 	margin: 10px;
 	cursor: pointer;
 	border-radius: 0.5rem;
@@ -242,7 +251,7 @@ article:hover {
 	font-size: 30px;
 	margin: 10px;
 	color: #D6D6D6;
-	background-color: #fff;
+	background-color: #ffffff;
 	cursor: pointer;
 
 }
@@ -260,7 +269,39 @@ article:hover {
 
 .fa-smile-beam {
 	font-size: 60px;
-	color: #666;
+	color: #666666;
+}
+
+/*---Article Pages---*/
+
+.article-container {
+    max-width: 600px;
+    background: #fff;
+    height: auto;
+    margin: auto;
+    padding: 10px 10px 10px 10px;
+    border-radius: 6px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.article-title {
+	font-family: 'DM Sans', sans-sherif;
+	text-align: center;
+}
+
+.article-subtitle {
+	font-family: 'Poppins', sans-serif;
+}
+
+.article-text {
+	font-family: 'Poppins', sans-serif;
+
+}
+
+.article-date {
+	text-align: right;
+	margin: 10px;
+	color: #666666;
 }
 
 /*---Footer---*/
@@ -270,9 +311,9 @@ footer {
 	width: 100%;
 	bottom: 0;
 	height: 60px;
-	background-color: #222;
+	background-color: #222222;
 	padding: 10px 30px 10px 30px;
-	color: #fff;
+	color: #ffffff;
 	opacity: 0.9;
 }
 
