@@ -38,8 +38,7 @@ a {
 	padding: 5px 0px;
 }
 
-.card-image {
-}
+
 
 .card-title {
 	font-family: 'DM Sans', sans-sherif;
@@ -322,6 +321,11 @@ article:hover {
 .article-text {
 	font-family: 'Poppins', sans-serif;
 
+}
+
+.card-image {
+	max-width: 100%;
+	height: auto;
 }
 
 .article-date {
