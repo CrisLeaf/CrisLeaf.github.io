@@ -86,7 +86,7 @@ article:hover {
     	margin: 20px auto;
     	padding: 5px 10px;
     }
-}    
+}
 
 
 /*---Navigation Menu---*/
@@ -322,8 +322,8 @@ article:hover {
 }
 
 .article-text {
+	text-align: justify;
 	font-family: 'Poppins', sans-serif;
-
 }
 
 .card-image {
@@ -349,7 +349,13 @@ article:hover {
 	}
 }
 
+b {
+	text-shadow: 0.2px 0px 0px #000, -0.2px 0px 0px #000;
+}
 
+.article-center {
+	text-align: center;
+}
 
 
 
