@@ -23,14 +23,15 @@
                 <a href="../../index.html" class="nav-link">Blog</a>
                 <a href="../../about.html" class="nav-link">About</a>
                 <a href="../../contact.html" class="nav-link">Contact</a>
+                <a href="../../apps.html" class="nav-link">Apps</a>
             </ul>
         </div>
         <!--Collapse on toggle button click-->
         <div class="collapse">
             <ul class="navbar-nav">
-                <div class="search-box">
-                    <a href="#" class="nav-link"><i class="fas fa-search"></i></a>
-                </div>
+<!--                <div class="search-box">-->
+<!--                    <a href="#" class="nav-link"><i class="fas fa-search"></i></a>-->
+<!--                </div>-->
                 <a href="https://www.instagram.com/cristorres.r/" class="nav-link"><i class="fab fa-instagram"></i></a>
                 <a href="https://www.linkedin.com/in/cris-torres-rojas-a0a972205/" class="nav-link"><i class="fab fa-linkedin"></i></a>
                 <a href="https://github.com/CrisLeaf" class="nav-link"><i class="fab fa-github"></i></a>
@@ -43,7 +44,7 @@
 <main id="article-main">
     <div class="article-container">
         <h2 class="article-title">
-            Cómo crear un recomendador de productos utilizando el Teorema del Coseno.
+            ¿Para qué sirve el coseno de un ángulo?. (Ejemplo de la vida real)
         </h2>
         <p class="article-date">
             <i class="fas fa-table"></i>
@@ -55,12 +56,13 @@
         <h3 class="article-subtitle">
         </h3>
         <p class="article-text">
-            Desde ya hace unos años que las páginas de internet, que ofrecen servicios o venden
-            productos, vienen utilizando sistemas de recomendación. Desde algoritmos complejos
-            con redes neuronales, hasta la utilización de un teorema que muchos vimos en secundaria.
+            <b>Desde ya hace unos años que las páginas de internet, que ofrecen servicios o venden
+            productos, vienen utilizando sistemas de recomendación</b>. Desde algoritmos complejos
+            con redes neuronales, hasta la utilización de un objeto matemático que muchos vimos en
+            secundaria.
             <br/>
             <br/>
-            Estamos hablando del Teorema del Coseno. Bien, pero ¿qué es lo que dice?. Antes,
+            Estamos hablando del coseno. Bien, pero ¿qué es?. Antes,
             debemos saber por qué queremos utilizarlo.
             <br/>
             <br/>
@@ -74,8 +76,8 @@
         <p class="article-text">
             Imagina que estás a cargo de las ventas online de una tienda de libros. Como cada
             día salen nuevos, y la página ha alcanzado los 20 mil libros en el catálogo.
-            Es virtualmente imposible que un usuario, que está navegando por la web, los
-            revise todos. Así que decides crear un algoritmo que, cada vez que alguien
+            <b>Es virtualmente imposible que un usuario, que está navegando por la web, los
+            revise todos</b>. Así que decides crear un algoritmo que, cada vez que alguien
             vea un libro, te recomiende otros parecidos. Y así un usuario podrá navegar
             fácilmente en los productos de su interés.
             <br/>
@@ -96,7 +98,115 @@
             proceso para cada uno de los miles de libros. Lo que nos tomará mucho tiempo.
             <br/>
             <br/>
-            O la otra opción es utilizar un simple teorema que está en los libros de secundaria.
+            O la otra opción es utilizar <b>una simple técnica inspirada en los libros de secundaria</b>.
+            <br/>
+            <br/>
+        </p>
+        <h3 class="article-subtitle">
+            ¿Cuál es esa técnica?
+        </h3>
+        <p class="article-text">
+            Cada producto debe tener una descripción, algo que lo caracterice o que lo distinga de
+            los demás, <b>para que el comprador se pueda hacer una idea de lo que comprará</b>. En el
+            caso de libros, es muy común que la descripción sea el párrafo que escribe el autor
+            en la contraportada. Después de todo, quién puede describir mejor un libro que su
+            propio autor.
+            <br/>
+            <br/>
+            Por ejemplo, en Harry Potter y La Piedra Filosofal, la contraportada dice algo como
+            "Harry Potter se ha quedado huérfano y vive con sus abominables tíos...". Entonces,
+            <b>la técnica consiste en reconocer las palabras claves, contarlas y almacenar los
+                números de manera ordenada</b>. En nuestro ejemplo, en la contraportada, se
+            menciona la palabra Harry 4 veces, y la palabra magia 3 veces. Así que agrupamos los
+            números y nos queda (4, 3).
+            <br/>
+            <br/>
+            A los números ordenados también se les llama vectores, y es <b>una forma de representar
+            un objeto en un espacio determinado</b>.
+            <br/>
+            <br/>
+            Y <b>la gracia de ese espacio es que podemos medir distancias</b>. Con eso podemos decir qué
+            tanto se parece un producto a otro, basados en los vectores definidos por la cantidad
+            de veces que se repiten las palabras claves.
+        </p>
+        <div class="article-img article-center">
+            <img src="vector_basic.png" class="card-image" height="250" width="400"/>
+        </div>
+        <h3 class="article-subtitle">
+            ¿Y cómo medimos esa distancia?
+        </h3>
+        <p class="article-text">
+            Aquí es donde entra en juego el coseno. <b>El coseno del ángulo formado por dos
+            vectores es la proyección perpendicular de un vector sobre el otro</b>. Por ejemplo, el
+            coseno del ángulo formado por los vectores del producto A y producto B es la longitud de
+            la barra de color rojo. En ese caso es un número pequeño y positivo.
+            <br/>
+            <br/>
+            El coseno del ángulo formado por los vectores A y C es un número grande y negativo,
+            porque ambos vectores van en dirección contraria. Como <b>el coseno del ángulo entre A y
+            B es mayor que el coseno del ángulo entre A y C</b>,
+            entonces podemos decir que el producto B se parece más al producto A, que el producto C.
+        </p>
+        <div class="article-img">
+            <img src="vector1.png" class="card-image" height="250" width="580"/>
+        </div>
+        <h3 class="article-subtitle">
+            Ejemplo de la vida real
+        </h3>
+        <p class="article-text">
+            Finalmente, transcribimos lo anterior en un lenguaje de programación (Python) y
+            creamos un recomendador de libros para una página de venta online. Veamos algunos
+            ejemplos:
+        <h4 class="article-subtitle">
+            Ejemplo 1:
+            <br/>
+            <br/>
+            Producto Base
+        </h4>
+        <div class="article-img">
+            <img src="example1.png" class="card-image" height="350" width="580"/>
+        </div>
+        <h4 class="article-subtitle">
+            Productos Recomendados
+        </h4>
+        <div class="article-img">
+            <img src="example11.png" class="card-image" height="350" width="580"/>
+        </div>
+        <h4 class="article-subtitle">
+            Ejemplo 2:
+            <br/>
+            <br/>
+            Producto Base
+        </h4>
+        <div class="article-img">
+            <img src="example2.png" class="card-image" height="350" width="580"/>
+        </div>
+        <h4 class="article-subtitle">
+            Productos Recomendados
+        </h4>
+        <div class="article-img">
+            <img src="example22.png" class="card-image" height="350" width="580"/>
+        </div>
+        <h4 class="article-subtitle">
+            Ejemplo 3:
+            <br/>
+            <br/>
+            Producto Base
+        </h4>
+        <div class="article-img">
+            <img src="example3.png" class="card-image" height="350" width="580"/>
+        </div>
+        <h4 class="article-subtitle">
+            Productos Recomendados
+        </h4>
+        <div class="article-img">
+            <img src="example33.png" class="card-image" height="350" width="580"/>
+        </div>
+        </p>
+        <p class="article-text">
+            <br/>
+            Sí te gustó el post o quieres crear tu propio recomendador, puedes encontrar más
+            información en el siguiente <a href="https://github.com/CrisLeaf/antartica_books_recommendation_system">link</a>.
         </p>
     </div>
 </main>
