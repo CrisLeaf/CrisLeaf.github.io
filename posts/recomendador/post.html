@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no,initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cris Torres</title>
+    <!--Font awesome icons cdn-->
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Custom style.css file-->
+    <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+<!--Header-->
+<header id="header" class="header-background">
+    <nav class="navbar">
+        <a href="../../index.html" class="nav-brand title-name">
+            Cris Torres
+        </a>
+        <!--Collapse on toggle button click-->
+        <div class="collapse">
+            <ul class="navbar-nav">
+                <a href="../../index.html" class="nav-link">Blog</a>
+                <a href="../../about.html" class="nav-link">About</a>
+                <a href="../../contact.html" class="nav-link">Contact</a>
+            </ul>
+        </div>
+        <!--Collapse on toggle button click-->
+        <div class="collapse">
+            <ul class="navbar-nav">
+                <div class="search-box">
+                    <a href="#" class="nav-link"><i class="fas fa-search"></i></a>
+                </div>
+                <a href="https://www.instagram.com/cristorres.r/" class="nav-link"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/cris-torres-rojas-a0a972205/" class="nav-link"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/CrisLeaf" class="nav-link"><i class="fab fa-github"></i></a>
+            </ul>
+        </div>
+    </nav>
+</header>
+<!--/Header-->
+<!--Main section-->
+<main id="article-main">
+    <div class="article-container">
+        <h2 class="article-title">
+            Cómo crear un recomendador de productos utilizando el Teorema del Coseno.
+        </h2>
+        <p class="article-date">
+            <i class="fas fa-table"></i>
+            05 de Enero, 2022
+        </p>
+        <div class="article-img">
+            <img src="recomendador.png" class="card-image" height="300" width="580"/>
+        </div>
+        <h3 class="article-subtitle">
+        </h3>
+        <p class="article-text">
+            Desde ya hace unos años que las páginas de internet, que ofrecen servicios o venden
+            productos, vienen utilizando sistemas de recomendación. Desde algoritmos complejos
+            con redes neuronales, hasta la utilización de un teorema que muchos vimos en secundaria.
+            <br/>
+            <br/>
+            Estamos hablando del Teorema del Coseno. Bien, pero ¿qué es lo que dice?. Antes,
+            debemos saber por qué queremos utilizarlo.
+            <br/>
+            <br/>
+        </p>
+        <div class="article-img">
+            <img src="venta1.png" class="card-image" height="300" width="580"/>
+        </div>
+        <h3 class="article-subtitle">
+            Presentación del problema
+        </h3>
+        <p class="article-text">
+            Imagina que estás a cargo de las ventas online de una tienda de libros. Como cada
+            día salen nuevos, y la página ha alcanzado los 20 mil libros en el catálogo.
+            Es virtualmente imposible que un usuario, que está navegando por la web, los
+            revise todos. Así que decides crear un algoritmo que, cada vez que alguien
+            vea un libro, te recomiende otros parecidos. Y así un usuario podrá navegar
+            fácilmente en los productos de su interés.
+            <br/>
+            <br/>
+            Se te ocurre dividir por categorías, y que te recomienden al azar otros
+            libros de la misma categoría. Por ejemplo, libros de cocina con libros
+            de cocina. Los de autoayuda con otros de autoayuda. Los de fantasía como "El Principito",
+            con otros de fantasía como "Harry Potter".
+        </p>
+        <div class="article-img">
+            <img src="el_principito1.png" class="card-image" height="300" width="580"/>
+        </div>
+        <p class="article-text">
+            ¡Espera un momento!, "Harry Potter" no se parece mucho a "El Principito", ¿o sí?.
+            ¿No sería mejor incluirlo en la sección de magia, junto con libros de trucos de
+            magia?. ¿O en la sección de libros medievales junto con "El Arte de la Guerra" de Sun
+            Tzu?. Incluso le podemos crear una sección nueva, pero tendremos que repetir el
+            proceso para cada uno de los miles de libros. Lo que nos tomará mucho tiempo.
+            <br/>
+            <br/>
+            O la otra opción es utilizar un simple teorema que está en los libros de secundaria.
+        </p>
+    </div>
+</main>
+<!--/Main section-->
+<footer>
+    <section>
+        <a href="#header" class="nav-header"><i class="fas fa-chevron-up"></i></a>
+    </section>
+    <p>Copyright 2022</p>
+</footer>
+</body>
+</html>
