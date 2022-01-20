@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no,initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cris Torres</title>
+    <!--Font awesome icons cdn-->
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Custom style.css file-->
+    <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+<!--Header-->
+<header id="header" class="header-background">
+    <nav class="navbar">
+        <a href="../../index.html" class="nav-brand title-name">
+            Cris Torres
+        </a>
+        <!--Collapse on toggle button click-->
+        <div class="collapse">
+            <ul class="navbar-nav">
+                <a href="../../index.html" class="nav-link">Blog</a>
+                <a href="../../about.html" class="nav-link">About</a>
+                <a href="../../contact.html" class="nav-link">Contact</a>
+                <a href="../../apps.html" class="nav-link">Apps</a>
+            </ul>
+        </div>
+        <!--Collapse on toggle button click-->
+        <div class="collapse">
+            <ul class="navbar-nav">
+<!--                <div class="search-box">-->
+<!--                    <a href="#" class="nav-link"><i class="fas fa-search"></i></a>-->
+<!--                </div>-->
+                <a href="https://www.instagram.com/cristorres.r/" class="nav-link"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/cris-torres-rojas-a0a972205/" class="nav-link"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/CrisLeaf" class="nav-link"><i class="fab fa-github"></i></a>
+            </ul>
+        </div>
+    </nav>
+</header>
+<!--/Header-->
+<!--Main section-->
+<main id="article-main">
+    <div class="article-container">
+        <h2 class="article-title">
+            Cómo crear historias utilizando Redes Neuronales
+        </h2>
+        <p class="article-date">
+            <i class="fas fa-table"></i>
+            19 de Enero, 2022
+        </p>
+        <div class="article-img">
+            <img src="gandalf1.jpeg" class="card-image" height="300" width="580"/>
+        </div>
+        <p class="article-text">
+            ¿Has escuchado hablar del Sindrome de la hoja en blanco?. Es un problema relacionado
+            al proceso creativo de una persona. Es la sensación de quedarse bloqueado al tener
+            que rellenar una historia con texto escrito por uno mismo. ¡Eso ya no te pasará más!
+            porque <b>el programa que te mostraré a continuación es capaz de completar las historias
+            por tí</b>.
+        </p>
+        <h3 class="article-subtitle">
+            Ejemplo
+        </h3>
+        <p class="article-text">
+            <b>Creamos un programa que completa las historias basándose en el universo de
+            Tolkien</b> (El creador de El Señor de los Anillos).
+            Veamos un ejemplo, y luego te explicaré como funciona.
+            <br/>
+            <br/>
+
+            Al entrar al programa en el siguiente <a
+                href="https://share.streamlit.io/crisleaf/tolkien_text_generator/text_generator_app.py">
+            link
+        </a> encontrarás un cuadro en donde debes escribir las primeras palabras de tu historia.
+            Digamos que queremos escribir la historia de un elfo oscuro. Empezamos por lo siguiente:
+        </p>
+        <div class="article-img">
+            <img src="example1.png" class="card-image" height="auto" width="580"/>
+        </div>
+        <p class="article-text">
+            Y clickeamos en generar para que la Red Neuronal complete la historia. Nos devuelve lo
+            siguiente:
+        </p>
+        <div class="article-img">
+            <img src="example2.png" class="card-image" height="auto" width="580"/>
+        </div>
+        <p class="article-text">
+            Podemos quedarnos con las palabras que más nos gusten o darle a Generar nuevamente
+            para obtener otro texto. Por ejemplo:
+        </p>
+        <div class="article-img">
+            <img src="example3.png" class="card-image" height="auto" width="580"/>
+        </div>
+        <p class="article-text">
+            Finalmente, nuestra historia podría empezar con lo siguiente:
+            <br/>
+            <br/>
+            <i>"<b>Un día un elfo oscuro</b> y de aspecto sombrío, de cabellos oscuros y ojos grises, entró
+            en la ciudad y encontró a Tuor sentado en un trono de piedra en medio de las puertas
+            de la casa de Turambar."
+            </i>
+            <br/>
+            <br/>
+            De la cual nosotros escribimos solo lo que está en negrita.
+        </p>
+
+
+
+
+        <p class="article-text extra-text">
+            Código Fuente:
+
+            <a href="https://github.com/CrisLeaf/tolkien_text_generator" class="github2">
+                <i class="fab fa-github"></i>
+            </a>
+        </p>
+        <style>
+			.extra-text {
+			    font-size: 16px;
+			    color: #666;
+			    text-align: right;
+			}
+			.github2 {
+				font-size: 25px;
+				color: #666;
+			}
+			.github2:hover {
+				color: cornflowerblue;
+				transition: color 0.3s ease;
+			}
+		    </style>
+    </div>
+</main>
+<!--/Main section-->
+<footer>
+    <section>
+        <a href="#header" class="nav-header"><i class="fas fa-chevron-up"></i></a>
+    </section>
+    <p>Copyright 2022</p>
+</footer>
+</body>
+</html>
