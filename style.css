@@ -160,17 +160,17 @@ article:hover {
 
 
 #site-main {
-	margin-top: 120px;
+	margin-top: 80px;
 	margin-bottom: 50px
 }
 
 #contact-main {
-	margin-top: 120px;
+	margin-top: 80px;
 	margin-bottom: 120px
 }
 
 #article-main {
-	margin-top: 120px;
+	margin-top: 80px;
 	margin-bottom: 120px
 }
 
@@ -359,6 +359,74 @@ b {
 
 .article-center {
 	text-align: center;
+}
+
+
+/*---Apps Card Styling---*/
+
+.apps-card-title {
+	font-family: 'DM Sans', sans-sherif;
+	font-weight: bold;
+	text-align: center;
+	margin: 10px 10px 20px 10px;
+}
+
+.app-container {
+    max-width: 600px;
+    height: auto;
+    background: #ffffff;
+    margin: 20px auto;
+    padding: 5px 10px 10px 10px;
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.flexbox {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.flex-button {
+	font-family: 'Roboto', sans-serif;
+	padding: 20px 40px;
+	border: 1px solid #695E5E;
+    color: #222222;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    flex: 1 0 40%;
+}
+.flex-button > div {
+	text-align: center;
+}
+.flex-button:hover {
+	background: #bbb;
+    transition: all 0.3s ease;
+}
+
+
+
+/*
+article:hover {
+	box-shadow: 0 0.1rem 0.4rem rgba(0,0,0,0.5);
+	transition: all 0.4s ease;
+	-webkit-transition: all 0.4s ease;
+}
+*/
+.article-box {
+	max-width: 600px;
+	height: auto;
+    margin: 20px auto;
+}
+@media (prefers-color-scheme: dark) {
+	.app-container {
+    	max-width: 600px;
+    	height: auto;
+    	background: #ffffff;
+    	margin: 20px auto;
+    	padding: 5px 10px 10px 10px;
+    	border-radius: 8px;
+    }
 }
 
 
