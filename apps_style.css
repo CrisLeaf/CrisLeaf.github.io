@@ -150,6 +150,11 @@ article:hover {
 	-webkit-transition: all 0.4s ease;
 }
 */
+.article-box {
+	max-width: 600px;
+	height: auto;
+    margin: 20px auto;
+}
 @media (prefers-color-scheme: dark) {
 	.container {
     	max-width: 600px;
