@@ -1,159 +1,569 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<!--[if IE 8 ]><html class="no-js oldie ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no,initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Cris Torres</title>
-    <!--Font awesome icons cdn-->
-    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!--Custom style.css file-->
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-<!--Header-->
-<header id="header" class="header-background">
-    <nav class="navbar">
-        <a href="index.html" class="nav-brand title-name">
-            Cris Torres
-        </a>
-        <!--Collapse on toggle button click-->
-        <div class="collapse">
-            <ul class="navbar-nav">
-                <a href="#" class="nav-link">Blog</a>
-                <a href="about.html" class="nav-link">About</a>
-                <a href="contact.html" class="nav-link">Contact</a>
-                <a href="apps.html" class="nav-link">Apps</a>
-            </ul>
-        </div>
-        <!--Collapse on toggle button click-->
-        <div class="collapse">
-            <ul class="navbar-nav">
-<!--                <div class="search-box">-->
-<!--                    <a href="#" class="nav-link"><i class="fas fa-search"></i></a>-->
-<!--                </div>-->
-                <a href="https://www.instagram.com/cristorres.r/" class="nav-link"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.linkedin.com/in/cris-torres-rojas-a0a972205/" class="nav-link"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/CrisLeaf" class="nav-link"><i class="fab fa-github"></i></a>
-            </ul>
-        </div>
-    </nav>
-</header>
-<!--/Header-->
-<!--Main section-->
-<main id="site-main">
-    <!--Blog post section-->
-    <div class="article-box">
-       <a class="article-link">
-            <article class="container">
-                <h2 class="card-title">
-                    Cómo crear historias utilizando Redes Neuronales
-                </h2>
-                <img src="posts/tolkien_text_generator/gandalf1.jpeg" class="card-image"
-                     height="300"
-                     width="580"/>
-                <p class="card-subtitle">
-                    ¿Alguna vez has experimentado el Síndrome de la hoja en blanco?. Con este
-                    método no te volverá a pasar.
-                </p>
-                <p class="card-footer">
-                    <i class="fas fa-table"></i>
-                    19 de Enero, 2022
-                </p>
-            </article>
-        </a>
-    </div>
-    <div class="article-box">
-        <a class="article-link">
-            <article class="container">
-                <h2 class="card-title">
-                    New York se está quemando.
-                </h2>
-                <img src="posts/ny_is_burning/ny_is_burning.jpg" class="card-image"
-                     height="300"
-                     width="580"/>
-                <p class="card-subtitle">
-                    Al igual que muchas ciudades del mundo. Por culpa de la crisis climática.
-                </p>
-                <p class="card-footer">
-                    <i class="fas fa-table"></i>
-                    08 de Enero, 2022
-                </p>
-            </article>
-        </a>
-    </div>
-    <div class="article-box">
-        <a class="article-link">
-            <article class="container">
-                <h2 class="card-title">
-                    ¿Para qué sirve el coseno de un ángulo?. (Ejemplo de la vida real)
-                </h2>
-                <img src="posts/recomendador/recomendador.png" class="card-image"
-                     height="300"
-                     width="580"/>
-                <p class="card-subtitle">
-                    Desde un libro de secundaria a una página web, en unas pocas líneas de código.
-                </p>
-                <p class="card-footer">
-                    <i class="fas fa-table"></i>
-                    05 de Enero, 2022
-                </p>
-            </article>
-        </a>
-    </div>
-    <div class="article-box">
-        <a class="article-link">
-        <article class="container">
-            <h2 class="card-title">
-                ¿Han aumentado los incendios forestales en Chile?
-            </h2>
-            <img src="posts/incendios_forestales/incendios1.png" class="card-image"
-                 height="300"
-                 width="580"/>
-            <p class="card-subtitle">
-                Analizamos algunos datos recolectados por <a
-                    href="https://www.conaf.cl/incendios-forestales/incendios-forestales-en-chile/estadisticas-historicas/">
-                Conaf
-            </a>, para comparar temporalmente la cantidad de incendios forestales en Chile.
-            </p>
-            <p class="card-footer">
-                <i class="fas fa-table"></i>
-                17 de Diciembre, 2021
-            </p>
-        </article>
-        </a>
-    </div>
-    <div class="article-box">
-        <a class="article-link">
-        <article class="container">
-            <h2 class="card-title">
-                ¿Qué tienen en común Einstein y las cartas de Poker?
-            </h2>
-            <img src="posts/einstein/einstein1.png" class="card-image" height="300"
-                 width="580"/>
-            <p class="card-subtitle">
-                La respuesta está en las simetrías.
-            </p>
-            <p class="card-footer">
-                <i class="fas fa-table"></i>
-                16 de Diciembre, 2021
-            </p>
-        </a>
-        </article>
-    </div>
-</main>
-<!--Next Page buttom-->
 
-<div class="page-buttons">
-    <button class="btn"><i class="fas fa-chevron-left"></i></button>
-    <button class="btn"><i class="fas fa-chevron-right"></i></button>
-</div>
-<!--/Main section-->
-<footer>
-    <section>
-        <a href="#header" class="nav-header"><i class="fas fa-chevron-up"></i></a>
-    </section>
-    <p>Copyright 2022</p>
-</footer>
+   <!--- basic page needs
+   ================================================== -->
+   <meta charset="utf-8">
+	<title>Cristóbal Torres R.</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+   <!-- mobile specific metas
+   ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+ 	<!-- CSS
+   ================================================== -->
+   <link rel="stylesheet" href="css/base.css">
+   <link rel="stylesheet" href="css/main.css">
+   <link rel="stylesheet" href="css/vendor.css">
+
+   <!-- script
+   ================================================== -->
+	<script src="js/modernizr.js"></script>
+	<script src="js/pace.min.js"></script>
+
+   <!-- favicons
+	================================================== -->
+	<link rel="icon" type="image/png" href="favicon.png">
+
+</head>
+
+<body id="top">
+
+	<!-- header
+   ================================================== -->
+   <header>
+   	<div class="row">
+
+   		<div class="top-bar">
+   			<a class="menu-toggle" href="#"><span>Menu</span></a>
+
+	   		<div class="logo">
+		         <a href="index.html">Cristóbal</a>
+		      </div>
+
+		   	<nav id="main-nav-wrap">
+					<ul class="main-navigation">
+						<li class="current"><a class="smoothscroll"  href="#intro" title="">Home</a></li>
+						<li><a class="smoothscroll"  href="#about" title="">About Me</a></li>
+						<li><a class="smoothscroll"  href="#Work" title="">Experience</a></li>
+						<li><a class="smoothscroll"  href="#Contacto" title="">Contact</a></li>
+
+					</ul>
+				</nav>
+   		</div> <!-- /top-bar -->
+
+   	</div> <!-- /row -->
+   </header> <!-- /header -->
+
+	<!-- intro section
+   ================================================== -->
+   <section id="intro">
+
+   	<div class="intro-overlay"></div>
+
+   	<div class="intro-content">
+   		<div class="row">
+
+   			<div class="col-twelve">
+
+	   			<h5>Hello, I'm</h5>
+	   			<h1>Cristóbal Torres Rojas.</h1>
+
+	   			<p class="intro-position">
+	   				<span>Data Scientist</span>
+	   				<span>Mathematician</span>
+	   			</p>
+
+	   			<a class="button stroke smoothscroll" href="#about" title="">More</a>
+
+	   		</div>
+
+   		</div>
+   	</div> <!-- /intro-content -->
+
+
+
+   </section> <!-- /intro -->
+
+
+   <!-- about section
+   ================================================== -->
+   <section id="about">
+
+   	<div class="row section-intro">
+   		<div class="col-twelve">
+
+   			<h5>About Me</h5>
+
+
+   			<div class="intro-info">
+
+   				<img src="images/resized-foto-perfil.png" alt="Profile Picture">
+
+					<p class="lead">
+						Programmer with <strong>2+ years of experience</strong> in data analysis and predictive modeling.
+						<br>
+						Specialist in Advanced Analytics and AI, focused on process optimization, trend forecasting, and strategic decision-making.
+						<br>
+						Currently, I work as a Data Scientist in DataQu, where I collaborate with developers from different IT areas.
+					</p>
+					
+   			</div>
+
+   		</div>
+   	</div> <!-- /section-intro -->
+
+   	<div class="row about-content">
+
+   		<div class="col-six tab-full">
+
+   			<h3>Info </h3>
+
+
+   			<ul class="info-list">
+   				<li>
+   					<strong>Name:</strong>
+   					<span>Cristóbal Torres Rojas</span>
+   				</li>
+   				<li>
+   					<strong>Email:</strong>
+   					<span>ctorres.ai@hotmail.com</span>
+   				</li>
+					 <li>
+						<strong>Role:</strong>
+						<span>Data Scientist</span>
+					</li>
+					<li>
+						<strong>Location:</strong>
+						<span>Chile - Remote</span>
+					</li>
+               
+
+
+   			</ul> <!-- /info-list -->
+
+   		</div>
+
+   		<div class="col-six tab-full">
+
+   			<h3>SKILLS</h3>
+
+
+				<ul class="skill-bars">
+				   <li>
+				   	<!-- <div class="progress percent90"><span>90%</span></div> -->
+				   	<strong>Python</strong>
+				   </li>
+				   <li>
+				   	<!-- <div class="progress percent85"><span>85%</span></div> -->
+				   	<strong>SQL</strong>
+				   </li>
+				   <li>
+						<!-- <div class="progress percent70"><span>70%</span></div> -->
+						<strong>NoSQL</strong>
+					</li>
+					<li>
+						<!-- <div class="progress percent70"><span>70%</span></div> -->
+						<strong>GIT</strong>
+					</li>
+					 
+
+				</ul> <!-- /skill-bars -->
+
+   		</div>
+
+   	</div>
+
+   	<div class="row button-section">
+   		<div class="col-twelve">
+   			<a href="#contact" title="Hire Me" class="button stroke smoothscroll">Contact</a>
+   			<a href="https://github.com/CrisLeaf/portfolio1/raw/refs/heads/master/cv/CV_2024.docx" target="_blank" title="Download CV" class="button button-primary">Download CV</a>
+   		</div>
+   	</div>
+
+   </section> <!-- /process-->
+
+
+   <!-- resume Section
+   ================================================== -->
+	<section id="Work" class="grey-section">
+
+   	<div class="row resume-timeline">
+
+   		<div class="col-twelve resume-header">
+
+   			<h2>Professional Experience</h2>
+
+   		</div> <!-- /resume-header -->
+
+   		<div class="col-twelve">
+
+   			<div class="timeline-wrap">
+
+   				<div class="timeline-block">
+
+	   				<div class="timeline-ico">
+							 <i class="fa fa-briefcase"></i>
+	   				</div>
+
+	   				<div class="timeline-header">
+	   					<h3>Data Scientist / DataQu / 2022 - present</h3>
+	   					<p>My main responsibilities cover the entire process: data <strong>scraping</strong> and <strong>analysis</strong>, machine learning <strong>modeling</strong>, and models <strong>deployment</strong> in web and app environments.
+</p>
+	   				</div>
+<!--  -->
+
+
+
+	   			</div> <!-- /timeline-block -->
+
+
+   			</div> <!-- /timeline-wrap -->
+
+   		</div> <!-- /col-twelve -->
+
+   	</div> <!-- /resume-timeline -->
+
+   	<div class="row resume-timeline">
+
+   		<div class="col-twelve resume-header">
+
+   			<h2>Projects</h2>
+
+   		</div> <!-- /resume-header -->
+
+   		<div class="col-twelve">
+
+   			<div class="timeline-wrap">
+
+   				<div class="timeline-block">
+
+						<div class="timeline-ico">
+							
+						</div>
+
+						<div class="timeline-header">
+						 <h3>AI that predicts treatment conditions for cancer patients</h3>
+							<p>DataQu</p>
+						</div>
+
+						<div class="timeline-content project-image-container">
+						 <img class="project-image-1" src="images/bn_proteger-1.png" alt="Profile Picture">
+							<p class="texto-imagen-proyecto">The model consists of an ensemble of 5 sub-models. It was trained on data collected by medical personnel, achieving 80% specificity on new data. 
+								It was integrated into the web platform so that doctors can enter patient data and receive real-time predictions.
+						 <br>
+						 <br>
+						 
+						 </p>
+						</div>
+						<span class="frameworks-proyecto"><strong>Frameworks: &nbsp;&nbsp;&nbsp; Numpy &nbsp; - &nbsp; Pandas &nbsp; - &nbsp; Matplotlib &nbsp; - &nbsp; Scikit-Learn &nbsp; - &nbsp; - &nbsp; Flask</strong></span>
+					</div> <!-- /timeline-block -->
+
+					<div class="timeline-block">
+
+						<div class="timeline-ico">
+							
+						</div>
+
+						<br>
+						<br>
+						<br>
+
+						<div class="timeline-header">
+							<h3>AI to Maximize Copper Recovery in a Mining Operation</h3>
+							<p>DataQu</p>
+						</div>
+
+						<div class="timeline-content project-image-container">
+						 <img class="project-image-1" src="images/bn_colla-1.png" alt="Profile Picture">
+							<p class="texto-imagen-proyecto">A recommendation algorithm was developed to optimize 200 variables in the mining process (mix extraction, grinder speed, cell temperature, etc.).
+								A system was created to track and identify rocks throughout the multi-day process.
+								The model achieved a margin of error of 15 minutes in identification, resulting in a 10% increase in copper recovery.
+						 <br>
+						 <br>
+						 </p>
+						</div>
+						<span class="frameworks-proyecto"><strong>Frameworks: &nbsp;&nbsp;&nbsp; Scikit-Learn &nbsp; - &nbsp; XGBoost &nbsp; - &nbsp; LightGBM &nbsp; - &nbsp; CatBoost &nbsp; - &nbsp; Optuna</strong></span>
+
+					</div> <!-- /timeline-block -->
+
+					<div class="timeline-block">
+
+						<br>
+						<br>
+						<br>
+
+
+						<div class="timeline-ico">
+							
+						</div>
+
+						<div class="timeline-header">
+						 <h3>AI for Identifying Profiles and Conditions in Port Accidents</h3>
+							<p>DataQu</p>
+						</div>
+
+						<div class="timeline-content project-image-container">
+						 <img class="project-image-1" src="images/bn_umar-1.png" alt="Profile Picture">
+							<p class="texto-imagen-proyecto">    A list of 10,000 accidents was processed, each attributed with 36 possible profiles and 50 potential conditions.
+								Training was performed using the <strong>phi</strong>, <strong>Llama</strong>, and <strong>GPT-4</strong> models, both in local and cloud versions.
+								The model achieved a weighted F1 score of 90% for profile detection and 80% for identifying conditions.
+						 <br>
+						 <br>
+						 
+						 </p>
+						</div>
+						<span class="frameworks-proyecto"><strong>Frameworks: &nbsp;&nbsp;&nbsp; Numpy &nbsp; - &nbsp; HuggingFace &nbsp; - &nbsp; PyTorch</strong></span>
+
+					</div> <!-- /timeline-block -->
+
+					<div class="timeline-block">
+
+						<br>
+						<br>
+						<br>
+
+						<div class="timeline-ico">
+							
+						</div>
+
+						<div class="timeline-header">
+						 <h3>AI for Bitcoin Trend Analysis</h3>
+							<p>DataQu</p>
+						</div>
+
+						<div class="timeline-content project-image-container">
+						 <img class="project-image-1" src="images/bn_btc-1.png" alt="Profile Picture">
+							<p class="texto-imagen-proyecto">An algorithm was created to load and update the real-time Bitcoin price using the Kraken API. An analysis is performed with the most common financial indicators and compared with trend model results.
+								The results are displayed on an interactive dashboard, which is updated every 15 minutes.
+						 <br>
+						 <br>
+						 
+						 </p>
+						</div>
+						<span class="frameworks-proyecto"><strong>Frameworks: &nbsp;&nbsp;&nbsp; Numpy &nbsp; - &nbsp; Pandas &nbsp; - &nbsp; Plotly &nbsp; - &nbsp; Dash &nbsp; - &nbsp; Fastapi &nbsp; - &nbsp; Scikit-Learn</strong></span>
+					</div> <!-- /timeline-block -->
+
+					<div class="timeline-block">
+
+						<br>
+						<br>
+						<br>
+
+
+	   			</div> <!-- /timeline-block -->
+
+	   			<div class="timeline-block">
+
+
+						<div class="row resume-timeline">
+
+							<div class="col-twelve resume-header">
+			 
+								<h2>Education</h2>
+			 
+							</div> <!-- /resume-header -->
+			 
+							<div class="col-twelve">
+			 
+								<div class="timeline-wrap">
+			 
+									<div class="timeline-block">
+			 
+										<div class="timeline-ico">
+											<i class="fa fa-graduation-cap"></i>
+										</div>
+			 
+										<div class="timeline-header">
+											<h3>Master's Degree in Mathematics / PUCV, Chile / 2020</h3>
+											<!-- <p>My main responsibilities cover the entire process: data <strong>scraping</strong> and <strong>analysis</strong>, machine learning <strong>modeling</strong>, and models <strong>deployment</strong> in web and app environments. -->
+			 <!-- </p> -->
+										</div>
+			 <!--  -->
+			 
+			 
+			 
+									</div> <!-- /timeline-block -->
+
+			 
+								</div> <!-- /timeline-wrap -->
+			 
+							</div> <!-- /col-twelve -->
+
+										 
+							<div class="col-twelve">
+			 
+								<div class="timeline-wrap">
+			 
+									<div class="timeline-block">
+			 
+										<div class="timeline-ico">
+											<i class="fa fa-graduation-cap"></i>
+										</div>
+			 
+										<div class="timeline-header">
+											<h3>Bachelor's Degree in Mathematics / PUCV, Chile / 2017</h3>
+											<!-- <p>My main responsibilities cover the entire process: data <strong>scraping</strong> and <strong>analysis</strong>, machine learning <strong>modeling</strong>, and models <strong>deployment</strong> in web and app environments. -->
+			 <!-- </p> -->
+										</div>
+			 <!--  -->
+			 
+			 <br>
+							<br>
+							<br>
+							
+			 
+									</div> <!-- /timeline-block -->
+
+			 
+								</div> <!-- /timeline-wrap -->
+			 
+							</div> <!-- /col-twelve -->
+							
+							
+			 
+						</div> <!-- /resume-timeline -->
+
+
+
+	   			</div> <!-- /timeline-block -->
+
+   			</div> <!-- /timeline-wrap -->
+
+   		</div> <!-- /col-twelve -->
+
+   	</div> <!-- /resume-timeline -->
+
+	</section> <!-- /features -->
+
+
+	<!-- Portfolio Section
+   ================================================== -->
+
+
+
+	<!-- CTA Section
+   ================================================== -->
+
+
+	<!-- services Section
+   ================================================== -->
+
+
+	<!-- stats Section
+   ================================================== -->
+
+
+   <!-- contact
+   ================================================== -->
+	<section id="contact">
+
+		<div class="row section-intro">
+   		<div class="col-twelve">
+
+   			<h5>Contact</h5>
+   			<h1>Do not hesitate to contact me.</h1>
+
+
+
+   		</div>
+   	</div> <!-- /section-intro -->
+
+   	
+
+   	<div class="row contact-info">
+
+   		<!-- <div class="col-four tab-full">
+
+   			<div class="icon">
+					<i class="icon-mail"></i>
+   			</div>
+
+   			<h5>ctorres.ai@hotmail.com</h5>
+
+   		</div> -->
+
+   		<div class="col-four tab-full collapse">
+
+				<div class="icon">
+					<a href="mailto:ctorres.ai@hotmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+				</div>
+
+				<h5>ctorres.ai@hotmail.com</h5>
+
+
+			</div>
+
+			<div class="col-four tab-full collapse">
+
+				<div class="icon">
+				 <a target="_blank"href="https://github.com/CrisLeaf"><i class="fa fa-github" aria-hidden="true"></i></a>
+				</div>
+
+				<h5>github.com/CrisLeaf</h5>
+
+
+			</div>
+
+   		<div class="col-four tab-full">
+
+   			<div class="icon">
+					<a target="_blank"href="https://www.linkedin.com/in/cristorres-dev/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+   			</div>
+   			<h5>in/cristorres-dev</h5>
+
+
+   		</div>
+
+   	</div> <!-- /contact-info -->
+
+	</section> <!-- /contact -->
+
+
+   <!-- footer
+   ================================================== -->
+
+   <footer>
+     	<div class="row" id="Contacto">
+        <div class="col-six tab-full pull-right social">
+
+             			<ul class="footer-social">
+        			      
+        			      <!-- <li><a target="_blank"href="https://twitter.com/MOHAMADABOUALNA"><i class="fa fa-twitter"></i></a></li> -->
+        			      <!-- <li><a target="_blank"href="https://github.com/aboualnaser"><i class="fa fa-github" aria-hidden="true"></i> -->
+</a></li>
+        			   </ul>
+
+        	      </div>
+
+	      	<div id="go-top">
+		         <a class="smoothscroll" title="Back to Top" href="#top"><i class="fa fa-long-arrow-up"></i></a>
+		      </div>
+
+      	</div> <!-- /row -->
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				
+   </footer>
+
+   <div id="preloader">
+    	<div id="loader"></div>
+   </div>
+
+   <!-- Java Script
+   ================================================== -->
+   <script src="js/jquery-2.1.3.min.js"></script>
+   <script src="js/plugins.js"></script>
+   <script src="js/main.js"></script>
+
 </body>
+
 </html>
